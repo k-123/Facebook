@@ -20,9 +20,14 @@
 		0AABC9181C60E24A00443E8E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABC9171C60E24A00443E8E /* Constants.swift */; };
 		0AABC91A1C60EC7300443E8E /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABC9191C60EC7300443E8E /* MaterialButton.swift */; };
 		0AABC91C1C60F21C00443E8E /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABC91B1C60F21C00443E8E /* MaterialTextField.swift */; };
+		0AABC9211C60FD6D00443E8E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AABC91E1C60FD6D00443E8E /* Bolts.framework */; };
+		0AABC9221C60FD6D00443E8E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AABC91F1C60FD6D00443E8E /* FBSDKCoreKit.framework */; };
+		0AABC9231C60FD6D00443E8E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AABC9201C60FD6D00443E8E /* FBSDKLoginKit.framework */; };
+		CFBA495DCC57C0989722E944 /* Pods_Lesson116_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B24C868E672FC6C778498F3 /* Pods_Lesson116_Firebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0644B1243E2DAD1C2BED92EA /* Pods-Lesson116-Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson116-Firebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lesson116-Firebase/Pods-Lesson116-Firebase.release.xcconfig"; sourceTree = "<group>"; };
 		0AABC8F21C60D89A00443E8E /* Lesson116-Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson116-Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AABC8F51C60D89A00443E8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AABC8F71C60D89A00443E8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +43,11 @@
 		0AABC9171C60E24A00443E8E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0AABC9191C60EC7300443E8E /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		0AABC91B1C60F21C00443E8E /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		0AABC91E1C60FD6D00443E8E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		0AABC91F1C60FD6D00443E8E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		0AABC9201C60FD6D00443E8E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		21B9F0EAFF28DBC9DAD1F1E0 /* Pods-Lesson116-Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson116-Firebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lesson116-Firebase/Pods-Lesson116-Firebase.debug.xcconfig"; sourceTree = "<group>"; };
+		6B24C868E672FC6C778498F3 /* Pods_Lesson116_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lesson116_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AABC9211C60FD6D00443E8E /* Bolts.framework in Frameworks */,
+				0AABC9221C60FD6D00443E8E /* FBSDKCoreKit.framework in Frameworks */,
+				0AABC9231C60FD6D00443E8E /* FBSDKLoginKit.framework in Frameworks */,
+				CFBA495DCC57C0989722E944 /* Pods_Lesson116_Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +70,8 @@
 			children = (
 				0AABC8F41C60D89A00443E8E /* Lesson116-Firebase */,
 				0AABC8F31C60D89A00443E8E /* Products */,
+				3FDB62219056A1FBDDAE0219 /* Pods */,
+				44C0CC71CA462D34AC57671D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +86,7 @@
 		0AABC8F41C60D89A00443E8E /* Lesson116-Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				0AABC91D1C60FD4B00443E8E /* Frameworks */,
 				0AABC9161C60E22800443E8E /* Util */,
 				0AABC90A1C60D94800443E8E /* Resources */,
 				0AABC9091C60D90600443E8E /* Model */,
@@ -128,6 +145,33 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		0AABC91D1C60FD4B00443E8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AABC91E1C60FD6D00443E8E /* Bolts.framework */,
+				0AABC91F1C60FD6D00443E8E /* FBSDKCoreKit.framework */,
+				0AABC9201C60FD6D00443E8E /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FDB62219056A1FBDDAE0219 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21B9F0EAFF28DBC9DAD1F1E0 /* Pods-Lesson116-Firebase.debug.xcconfig */,
+				0644B1243E2DAD1C2BED92EA /* Pods-Lesson116-Firebase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		44C0CC71CA462D34AC57671D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B24C868E672FC6C778498F3 /* Pods_Lesson116_Firebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AABC9041C60D89A00443E8E /* Build configuration list for PBXNativeTarget "Lesson116-Firebase" */;
 			buildPhases = (
+				9BA2C6B396B593E9B612B93A /* Check Pods Manifest.lock */,
 				0AABC8EE1C60D89A00443E8E /* Sources */,
 				0AABC8EF1C60D89A00443E8E /* Frameworks */,
 				0AABC8F01C60D89A00443E8E /* Resources */,
+				1F0FED0509B06542AD0B1B75 /* Embed Pods Frameworks */,
+				4B2C9A77117E345F6CE020DF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +245,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F0FED0509B06542AD0B1B75 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lesson116-Firebase/Pods-Lesson116-Firebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B2C9A77117E345F6CE020DF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lesson116-Firebase/Pods-Lesson116-Firebase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BA2C6B396B593E9B612B93A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AABC8EE1C60D89A00443E8E /* Sources */ = {
@@ -320,8 +415,14 @@
 		};
 		0AABC9051C60D89A00443E8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21B9F0EAFF28DBC9DAD1F1E0 /* Pods-Lesson116-Firebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lesson116-Firebase",
+				);
 				INFOPLIST_FILE = "Lesson116-Firebase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.none.Lesson116-Firebase";
@@ -331,8 +432,14 @@
 		};
 		0AABC9061C60D89A00443E8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0644B1243E2DAD1C2BED92EA /* Pods-Lesson116-Firebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lesson116-Firebase",
+				);
 				INFOPLIST_FILE = "Lesson116-Firebase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.none.Lesson116-Firebase";
