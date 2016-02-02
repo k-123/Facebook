@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A917AC01C61170E0074E1AD /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A917ABF1C61170E0074E1AD /* DataService.swift */; };
 		0AABC8F61C60D89A00443E8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABC8F51C60D89A00443E8E /* AppDelegate.swift */; };
 		0AABC8F81C60D89A00443E8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABC8F71C60D89A00443E8E /* ViewController.swift */; };
 		0AABC8FB1C60D89A00443E8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AABC8F91C60D89A00443E8E /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0644B1243E2DAD1C2BED92EA /* Pods-Lesson116-Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson116-Firebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lesson116-Firebase/Pods-Lesson116-Firebase.release.xcconfig"; sourceTree = "<group>"; };
+		0A917ABF1C61170E0074E1AD /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0AABC8F21C60D89A00443E8E /* Lesson116-Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson116-Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AABC8F51C60D89A00443E8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AABC8F71C60D89A00443E8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A917ABE1C6116D20074E1AD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0A917ABF1C61170E0074E1AD /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		0AABC8E91C60D89A00443E8E = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 		0AABC8F41C60D89A00443E8E /* Lesson116-Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				0A917ABE1C6116D20074E1AD /* Services */,
 				0AABC91D1C60FD4B00443E8E /* Frameworks */,
 				0AABC9161C60E22800443E8E /* Util */,
 				0AABC90A1C60D94800443E8E /* Resources */,
@@ -300,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AABC91C1C60F21C00443E8E /* MaterialTextField.swift in Sources */,
+				0A917AC01C61170E0074E1AD /* DataService.swift in Sources */,
 				0AABC9141C60E19D00443E8E /* MaterialView.swift in Sources */,
 				0AABC8F81C60D89A00443E8E /* ViewController.swift in Sources */,
 				0AABC8F61C60D89A00443E8E /* AppDelegate.swift in Sources */,
