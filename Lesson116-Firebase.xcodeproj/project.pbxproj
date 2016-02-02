@@ -24,6 +24,8 @@
 		0AABC9211C60FD6D00443E8E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AABC91E1C60FD6D00443E8E /* Bolts.framework */; };
 		0AABC9221C60FD6D00443E8E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AABC91F1C60FD6D00443E8E /* FBSDKCoreKit.framework */; };
 		0AABC9231C60FD6D00443E8E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AABC9201C60FD6D00443E8E /* FBSDKLoginKit.framework */; };
+		0ACC881E1C613C2000FEBBCD /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC881D1C613C2000FEBBCD /* FeedVC.swift */; };
+		0ACC88201C613D7F00FEBBCD /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC881F1C613D7F00FEBBCD /* PostCell.swift */; };
 		CFBA495DCC57C0989722E944 /* Pods_Lesson116_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B24C868E672FC6C778498F3 /* Pods_Lesson116_Firebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		0AABC91E1C60FD6D00443E8E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		0AABC91F1C60FD6D00443E8E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		0AABC9201C60FD6D00443E8E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		0ACC881D1C613C2000FEBBCD /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		0ACC881F1C613D7F00FEBBCD /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		21B9F0EAFF28DBC9DAD1F1E0 /* Pods-Lesson116-Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson116-Firebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lesson116-Firebase/Pods-Lesson116-Firebase.debug.xcconfig"; sourceTree = "<group>"; };
 		6B24C868E672FC6C778498F3 /* Pods_Lesson116_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lesson116_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,7 +108,6 @@
 				0AABC9081C60D90000443E8E /* View */,
 				0AABC9071C60D8F900443E8E /* Controller */,
 				0AABC8F51C60D89A00443E8E /* AppDelegate.swift */,
-				0AABC8F71C60D89A00443E8E /* ViewController.swift */,
 				0AABC8F91C60D89A00443E8E /* Main.storyboard */,
 				0AABC8FC1C60D89A00443E8E /* Assets.xcassets */,
 				0AABC8FE1C60D89A00443E8E /* LaunchScreen.storyboard */,
@@ -116,6 +119,8 @@
 		0AABC9071C60D8F900443E8E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0AABC8F71C60D89A00443E8E /* ViewController.swift */,
+				0ACC881D1C613C2000FEBBCD /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 				0AABC9131C60E19D00443E8E /* MaterialView.swift */,
 				0AABC9191C60EC7300443E8E /* MaterialButton.swift */,
 				0AABC91B1C60F21C00443E8E /* MaterialTextField.swift */,
+				0ACC881F1C613D7F00FEBBCD /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -314,6 +320,8 @@
 				0A917AC01C61170E0074E1AD /* DataService.swift in Sources */,
 				0AABC9141C60E19D00443E8E /* MaterialView.swift in Sources */,
 				0AABC8F81C60D89A00443E8E /* ViewController.swift in Sources */,
+				0ACC881E1C613C2000FEBBCD /* FeedVC.swift in Sources */,
+				0ACC88201C613D7F00FEBBCD /* PostCell.swift in Sources */,
 				0AABC8F61C60D89A00443E8E /* AppDelegate.swift in Sources */,
 				0AABC9181C60E24A00443E8E /* Constants.swift in Sources */,
 				0AABC91A1C60EC7300443E8E /* MaterialButton.swift in Sources */,
