@@ -5,5 +5,7 @@ use_frameworks!
 
 target 'Lesson116-Firebase' do
 pod 'Firebase', '>= 2.5.0'
+pod 'Alamofire', '~> 2.0'
+
 end
 
