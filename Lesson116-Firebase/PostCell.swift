@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import Firebase
 
 class PostCell: UITableViewCell {
     
@@ -15,14 +16,20 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var showcaseImg: UIImageView!
     @IBOutlet weak var descriptionText: UITextView!
     @IBOutlet weak var likesLbl: UILabel!
+    @IBOutlet weak var likeImage: UIImageView!
     
     var post: Post!
-    
     // store request (firebase object) so we are then able to cancel it when we need to
     var request: Request?
+    var likeRef: Firebase!
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        let tap = UITapGestureRecognizer(target: self, action: "likeTapped:")
+        tap.numberOfTapsRequired = 1
+        likeImage.addGestureRecognizer(tap)
+        likeImage.userInteractionEnabled = true
     }
     
     override func drawRect(rect: CGRect) {
@@ -35,6 +42,8 @@ class PostCell: UITableViewCell {
     func configureCell(post: Post, img: UIImage?) {
         
         self.post = post
+        
+        likeRef = DataService.ds.REF_USER_CURRENT.childByAppendingPath("likes").childByAppendingPath(post.postKey)
         
         self.descriptionText.text = post.postDescription
         self.likesLbl.text = "\(post.likes)"
@@ -54,6 +63,10 @@ class PostCell: UITableViewCell {
                         let img = UIImage(data: data!)!
                         self.showcaseImg.image = img
                         FeedVC.imageCache.setObject(img, forKey: self.post.imageUrl!)
+                        
+                    } else {
+                        
+                        print(err.debugDescription)
                     }
                 })
             }
@@ -62,6 +75,42 @@ class PostCell: UITableViewCell {
             
             self.showcaseImg.hidden = true
         }
+        
+        // check likes
+        //let likeRef = DataService.ds.REF_USER_CURRENT.childByAppendingPath("likes").childByAppendingPath(post.postKey)
+        
+        likeRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
+            
+            // if you check a .value in firebase and there is no data you will get an 'NSNull' (dont check against nil or null)
+            if let doesNotExist = snapshot.value as? NSNull {
+                
+                // this means we have not liked a specific post
+                self.likeImage.image = UIImage(named: "heart-empty")
+                
+            } else {
+                
+                self.likeImage.image = UIImage(named: "heart-full")
+            }
+        })
+    }
+    
+    func likeTapped(sender: UITapGestureRecognizer) {
+        
+        likeRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
+            
+            if let doesNotExist = snapshot.value as? NSNull {
+                
+                self.likeImage.image = UIImage(named: "heart-full")
+                self.post.adjustLikes(true)
+                self.likeRef.setValue(true)
+                
+            } else {
+                
+                self.likeImage.image = UIImage(named: "heart-empty")
+                self.post.adjustLikes(false)
+                self.likeRef.removeValue()
+            }
+        })
     }
 }
 
